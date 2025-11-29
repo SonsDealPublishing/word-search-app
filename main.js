@@ -1,4 +1,10 @@
 // main.js
+document.addEventListener("DOMContentLoaded", () => {
+  const homeButton = document.getElementById("homeButton");
+  if (homeButton) {
+    homeButton.onclick = () => location.href = "index.html";
+  }
+});
 
 // Filter only puzzles for book 401
 const currentBook = 401;

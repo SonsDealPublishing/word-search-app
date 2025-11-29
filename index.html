@@ -2,45 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <title>Word Search: Book 401</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puzzle Home</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .home-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      text-align: center;
+      width: 90%;
+      max-width: 450px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .home-card:hover {
+      transform: scale(1.02);
+    }
+    .home-card img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+    .home-title {
+      text-align: center;
+      margin: 20px auto;
+      font-size: 22px;
+      font-weight: 600;
+    }
+  </style>
 </head>
+
 <body>
-  <!-- App bar -->
   <header class="app-bar">
-    <button class="icon-button" id="backBtn" aria-label="Back">
-      &#x25C0;
-    </button>
-    <h1 class="app-title">Word Search: Book 401</h1>
+    <h1 class="app-title">Word Search Puzzles</h1>
   </header>
 
-  <!-- Content -->
-  <main class="page-content">
-    <!-- Search -->
-    <div class="search-wrapper">
-      <input
-        id="searchInput"
-        type="text"
-        placeholder="Type a puzzle ID (example: W-1-1)"
-      />
-      <button
-        id="clearSearch"
-        class="icon-button"
-        aria-label="Clear search"
-      >
-        ✕
-      </button>
-    </div>
+  <h2 class="home-title">Choose Type</h2>
 
-    <!-- List of puzzles -->
-    <div id="puzzleList" class="puzzle-list"></div>
-  </main>
+  <div class="home-card" onclick="location.href='book-list.html'">
+    <img src="icons/word-icon.png" alt="Word Search" />
+    <h3>Word Search</h3>
+    <p>Step-by-step Solutions</p>
+  </div>
 
-  <script src="puzzlesData.js"></script>
-  <script src="main.js"></script>
+  <div class="home-card" onclick="location.href='number-list.html'">
+    <img src="icons/number-icon.png" alt="Number Search" />
+    <h3>Number Search</h3>
+    <p>Step-by-step Solutions</p>
+  </div>
 </body>
 </html>
