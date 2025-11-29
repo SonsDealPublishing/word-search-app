@@ -1,0 +1,143 @@
+/* Reset-ish */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: #f7f7f7;
+  color: #222;
+}
+
+/* App bar */
+.app-bar {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #2196f3; /* blue */
+  color: #fff;
+}
+
+.app-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.icon-button {
+  border: none;
+  background: none;
+  color: inherit;
+  font-size: 20px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+/* Layout */
+.page-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Search bar */
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin: 12px 8px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px #ddd;
+}
+
+#searchInput {
+  flex: 1;
+  border: none;
+  font-size: 15px;
+  outline: none;
+}
+
+/* Puzzle list */
+.puzzle-list {
+  background-color: #fff;
+}
+
+.puzzle-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.puzzle-item:last-child {
+  border-bottom: none;
+}
+
+.puzzle-number-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1976d2;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.puzzle-main {
+  flex: 1;
+}
+
+.puzzle-title {
+  font-size: 16px;
+}
+
+.puzzle-subtitle {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Grid icon (right side) */
+.puzzle-grid-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+/* Puzzle view page */
+.puzzle-view {
+  padding: 16px;
+}
+
+.puzzle-grid-placeholder {
+  margin-top: 16px;
+  border-radius: 4px;
+  border: 1px dashed #bbb;
+  padding: 30px 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Mobile tweaks */
+@media (max-width: 480px) {
+  .puzzle-title {
+    font-size: 15px;
+  }
+  .puzzle-number-circle {
+    width: 36px;
+    height: 36px;
+  }
+}

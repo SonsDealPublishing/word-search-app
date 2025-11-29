@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Word Search: Book 401</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- App bar -->
+  <header class="app-bar">
+    <button class="icon-button" id="backBtn" aria-label="Back">
+      &#x25C0;
+    </button>
+    <h1 class="app-title">Word Search: Book 401</h1>
+  </header>
+
+  <!-- Content -->
+  <main class="page-content">
+    <!-- Search -->
+    <div class="search-wrapper">
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Type a puzzle ID (example: W-1-1)"
+      />
+      <button
+        id="clearSearch"
+        class="icon-button"
+        aria-label="Clear search"
+      >
+        ✕
+      </button>
+    </div>
+
+    <!-- List of puzzles -->
+    <div id="puzzleList" class="puzzle-list"></div>
+  </main>
+
+  <script src="puzzlesData.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

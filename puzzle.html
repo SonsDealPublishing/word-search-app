@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Puzzle Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-bar">
+    <button class="icon-button" id="backToList" aria-label="Back">
+      &#x25C0;
+    </button>
+    <h1 class="app-title" id="puzzleTitle">Puzzle</h1>
+  </header>
+
+  <main class="page-content">
+    <section class="puzzle-view">
+      <p id="puzzleInfo"></p>
+
+      <!-- placeholder grid area -->
+      <div class="puzzle-grid-placeholder">
+        <p>This is where your word search grid will go.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="puzzlesData.js"></script>
+  <script src="puzzlePage.js"></script>
+</body>
+</html>
